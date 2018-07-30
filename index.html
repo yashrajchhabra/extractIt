@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        input {
+            width: 100%;
+            height: 40px;
+            border: solid 1px #ccc;
+            border-radius: 4px;
+            font-size: 20px;
+            padding: 0 16px;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+        }
+
+        button {
+            width: 100px;
+            margin-left: 16px;
+            background: #3983cd;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 20px;
+        }
+
+        img {
+            width: 320px;
+            height: 180px;
+            margin-left: 16px;
+            margin-bottom: 16px;
+        }
+
+        .sample-rate {
+            width: 200px;
+            margin-left: 16px;
+        }
+    </style>
+</head>
+<body>
+<div class="row">
+    <input id="input" type="text" placeholder="Comma separated urls">
+    <input id="sample-rate" type="text" value="30" class="sample-rate" placeholder="Sample rate">
+    <button onclick="extract()">Submit</button>
+</div>
+<p id="progress-0"></p>
+<div id="status"></div>
+<div id="frames-generated"></div>
+<div id="frames">
+
+</div>
+</body>
+<script src="main.js"></script>
+</html>
